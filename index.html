@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live PostIt — Sticky Notes for Your Desktop</title>
+    <meta
+      name="description"
+      content="Live PostIt is a delightful desktop sticky-note wall. Create walls, pin notes, share them live with friends, and keep every device in sync."
+    />
+    <link rel="icon" type="image/png" href="assets/icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <div class="nav-inner">
+        <span class="brand">
+          <img src="assets/icon.png" alt="Live PostIt icon" class="brand-logo" />
+          <span>Live PostIt</span>
+        </span>
+        <a class="github-link" href="https://github.com/outlander420/live-postit-releases" target="_blank" rel="noopener">
+          GitHub
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img src="assets/icon.png" alt="" class="hero-logo" />
+        <h1>Sticky notes for your desktop.</h1>
+        <p class="tagline">
+          Create walls, pin notes, format them with rich text — and share them live with friends.
+          Free. Offline-first. Your data stays on your machine.
+        </p>
+        <div class="downloads">
+          <div class="dl-group">
+            <span class="dl-os">Windows</span>
+            <a
+              class="btn primary"
+              href="https://github.com/outlander420/live-postit-releases/releases/download/v0.1.0/live-postit-Setup-0.1.0.exe"
+              >Download for Windows (.exe)</a
+            >
+          </div>
+          <div class="dl-group">
+            <span class="dl-os">Linux</span>
+            <a
+              class="btn primary"
+              href="https://github.com/outlander420/live-postit-releases/releases/download/v0.1.0/live-postit-0.1.0.AppImage"
+              >Download AppImage</a
+            >
+            <a
+              class="btn ghost"
+              href="https://github.com/outlander420/live-postit-releases/releases/download/v0.1.0/live-postit-0.1.0.tar.gz"
+              >or the .tar.gz archive</a
+            >
+          </div>
+        </div>
+        <p class="version">v0.1.0 · Windows &amp; Linux · macOS soon</p>
+      </section>
+
+      <section class="features">
+        <div class="feature">
+          <h3>Multiple walls</h3>
+          <p>Keep separate boards for work, shopping, ideas — switch with <code>Ctrl+1…9</code>.</p>
+        </div>
+        <div class="feature">
+          <h3>Rich text notes</h3>
+          <p>Bold, italic, underline, checklists and bullet lists. Drag, resize, recolor.</p>
+        </div>
+        <div class="feature">
+          <h3>Share a wall live</h3>
+          <p>Give friends a code to view &amp; edit the same wall together in real time.</p>
+        </div>
+        <div class="feature">
+          <h3>Sync across devices</h3>
+          <p>Keep your walls in sync on all your machines via your own Firebase project.</p>
+        </div>
+        <div class="feature">
+          <h3>Offline-first &amp; private</h3>
+          <p>Notes live locally. No account, no analytics, no tracking — only leave your device when you say so.</p>
+        </div>
+        <div class="feature">
+          <h3>Automatic updates</h3>
+          <p>Installed versions keep themselves up to date silently in the background.</p>
+        </div>
+      </section>
+
+      <section class="install">
+        <h2>Install in seconds</h2>
+        <div class="install-cols">
+          <div>
+            <h3>Windows</h3>
+            <ol>
+              <li>Run the <strong>.exe</strong> installer.</li>
+              <li>Follow the setup and open Live PostIt from the Start menu.</li>
+            </ol>
+          </div>
+          <div>
+            <h3>Linux (AppImage)</h3>
+            <ol>
+              <li>Make it executable:
+                <pre>chmod +x live-postit-0.1.0.AppImage</pre>
+              </li>
+              <li>Run it:
+                <pre>./live-postit-0.1.0.AppImage</pre>
+              </li>
+              <li>If nothing opens, install <code>libfuse2</code> and try again.</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Live PostIt · Open source on GitHub</p>
+      <p class="fine">This site hosts release binaries and update metadata only. Source lives in a private repository.</p>
+    </footer>
+  </body>
+</html>
