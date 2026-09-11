@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500">
+  <rect width="800" height="500" fill="#f2efe8"/>
+  <rect x="100" y="50" width="220" height="200" rx="10" fill="#819dbe" opacity="0.8"/>
+  <text x="120" y="100" font-family="sans-serif" font-size="14" fill="#20232a"><b>Bold text</b></text>
+  <text x="120" y="125" font-family="sans-serif" font-size="14" fill="#20232a"><i>Italic text</i></text>
+  <text x="120" y="150" font-family="sans-serif" font-size="14" fill="#20232a" text-decoration="underline">Underlined</text>
+  <text x="120" y="180" font-family="sans-serif" font-size="14" fill="#20232a">☐ Task 1</text>
+  <text x="120" y="205" font-family="sans-serif" font-size="14" fill="#20232a">☑ Task 2</text>
+  <rect x="350" y="50" width="220" height="200" rx="10" fill="#f8cdc7" opacity="0.8"/>
+  <text x="370" y="100" font-family="sans-serif" font-size="14" fill="#20232a">• Item 1</text>
+  <text x="370" y="125" font-family="sans-serif" font-size="14" fill="#20232a">• Item 2</text>
+  <text x="370" y="150" font-family="sans-serif" font-size="14" fill="#20232a">• Item 3</text>
+  <text x="400" y="480" font-family="sans-serif" font-size="12" fill="#6f6a60" text-anchor="middle">Rich text formatting with bold, italic, checklists</text>
+</svg>

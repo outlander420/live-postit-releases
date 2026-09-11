@@ -4,10 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Live PostIt — Sticky Notes for Your Desktop</title>
-    <meta
-      name="description"
-      content="Live PostIt is a delightful desktop sticky-note wall. Create walls, pin notes, share them live with friends, and keep every device in sync."
-    />
+    <meta name="description" content="Live PostIt is a delightful desktop sticky-note wall. Create walls, pin notes, share them live with friends, and keep every device in sync." />
     <link rel="icon" type="image/png" href="assets/icon.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -18,70 +15,100 @@
           <img src="assets/icon.png" alt="Live PostIt icon" class="brand-logo" />
           <span>Live PostIt</span>
         </span>
-        <a class="github-link" href="https://github.com/outlander420/live-postit-releases" target="_blank" rel="noopener">
-          GitHub
-        </a>
+        <nav class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#screenshots">Screenshots</a>
+          <a href="#download">Download</a>
+          <a class="github-link" href="https://github.com/outlander420/live-postit" target="_blank" rel="noopener">GitHub</a>
+        </nav>
       </div>
     </header>
 
     <main>
       <section class="hero">
-        <img src="assets/icon.png" alt="" class="hero-logo" />
-        <h1>Sticky notes for your desktop.</h1>
-        <p class="tagline">
-          Create walls, pin notes, format them with rich text — and share them live with friends.
-          Free. Offline-first. Your data stays on your machine.
-        </p>
-        <div class="downloads">
-          <div class="dl-group">
-            <span class="dl-os">Windows</span>
-            <a
-              class="btn primary"
-              href="assets/live-postit-Setup-0.1.0.exe"
-              >Download for Windows (.exe)</a
-            >
+        <div class="hero-content">
+          <img src="assets/icon.png" alt="" class="hero-logo" />
+          <h1>Sticky notes for your desktop.</h1>
+          <p class="tagline">
+            Create walls, pin notes, format them with rich text — and share them live with friends.
+            Free. Offline-first. Your data stays on your machine.
+          </p>
+          <div class="hero-actions">
+            <a href="#download" class="btn primary">Download Now</a>
+            <a href="https://github.com/outlander420/live-postit" target="_blank" rel="noopener" class="btn ghost">View on GitHub</a>
           </div>
-          <div class="dl-group">
-            <span class="dl-os">Linux</span>
-            <a
-              class="btn primary"
-              href="https://github.com/outlander420/live-postit-releases/releases/download/v0.1.0/live-postit-0.1.0.AppImage"
-              >Download AppImage</a
-            >
-            <a
-              class="btn ghost"
-              href="assets/live-postit-0.1.0.tar.gz"
-              >or the .tar.gz archive</a
-            >
-          </div>
+          <p class="version">v0.1.0 · Windows &amp; Linux · macOS coming soon</p>
         </div>
-        <p class="version">v0.1.0 · Windows &amp; Linux · macOS soon</p>
       </section>
 
-      <section class="features">
+      <section id="features" class="features">
         <div class="feature">
+          <div class="feature-icon">📋</div>
           <h3>Multiple walls</h3>
           <p>Keep separate boards for work, shopping, ideas — switch with <code>Ctrl+1…9</code>.</p>
         </div>
         <div class="feature">
+          <div class="feature-icon">✏️</div>
           <h3>Rich text notes</h3>
           <p>Bold, italic, underline, checklists and bullet lists. Drag, resize, recolor.</p>
         </div>
         <div class="feature">
+          <div class="feature-icon">🔄</div>
           <h3>Share a wall live</h3>
           <p>Give friends a code to view &amp; edit the same wall together in real time.</p>
         </div>
         <div class="feature">
+          <div class="feature-icon">☁️</div>
           <h3>Sync across devices</h3>
           <p>Keep your walls in sync on all your machines via your own Firebase project.</p>
         </div>
         <div class="feature">
+          <div class="feature-icon">🔒</div>
           <h3>Offline-first &amp; private</h3>
           <p>Notes live locally. No account, no analytics, no tracking — only leave your device when you say so.</p>
         </div>
         <div class="feature">
+          <div class="feature-icon">⚡</div>
           <h3>Automatic updates</h3>
           <p>Installed versions keep themselves up to date silently in the background.</p>
+        </div>
+      </section>
+
+      <section id="screenshots" class="screenshots">
+        <h2>See it in action</h2>
+        <div class="screenshot-grid">
+          <div class="screenshot">
+            <img src="assets/screenshots/wall.png" alt="Live PostIt wall with notes" />
+            <p class="caption">Create multiple walls for different projects</p>
+          </div>
+          <div class="screenshot">
+            <img src="assets/screenshots/notes.png" alt="Live PostIt rich text notes" />
+            <p class="caption">Rich text formatting with bold, italic, checklists</p>
+          </div>
+          <div class="screenshot">
+            <img src="assets/screenshots/share.png" alt="Live PostIt sharing" />
+            <p class="caption">Share walls live with friends using a simple code</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="download">
+        <h2>Download Live PostIt</h2>
+        <p class="download-desc">Available for Windows and Linux. macOS version coming soon.</p>
+        <div class="download-cards">
+          <div class="download-card">
+            <div class="download-icon">🪟</div>
+            <h3>Windows</h3>
+            <p class="download-size">79 MB · .exe installer</p>
+            <a href="assets/live-postit-Setup-0.1.0.exe" class="btn primary">Download for Windows</a>
+          </div>
+          <div class="download-card">
+            <div class="download-icon">🐧</div>
+            <h3>Linux</h3>
+            <p class="download-size">99 MB · .tar.gz archive</p>
+            <a href="assets/live-postit-0.1.0.tar.gz" class="btn primary">Download for Linux</a>
+            <a href="https://github.com/outlander420/live-postit-releases/releases/download/v0.1.0/live-postit-0.1.0.AppImage" class="btn ghost" style="margin-top: 8px;">Or AppImage</a>
+          </div>
         </div>
       </section>
 
@@ -112,8 +139,15 @@
     </main>
 
     <footer>
-      <p>Live PostIt · Open source on GitHub</p>
-      <p class="fine">This site hosts release binaries and update metadata only. Source lives in a private repository.</p>
+      <div class="footer-inner">
+        <div class="footer-links">
+          <a href="https://github.com/outlander420/live-postit" target="_blank" rel="noopener">Source Code</a>
+          <a href="https://github.com/outlander420/live-postit-releases" target="_blank" rel="noopener">Releases</a>
+          <a href="https://github.com/outlander420/live-postit/issues" target="_blank" rel="noopener">Issues</a>
+        </div>
+        <p>Live PostIt · Open source on GitHub</p>
+        <p class="fine">This site hosts release binaries and update metadata only. Source lives in a private repository.</p>
+      </div>
     </footer>
   </body>
 </html>
