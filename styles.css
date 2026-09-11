@@ -226,37 +226,70 @@ a:hover {
 
 /* Screenshots */
 .screenshots {
-  max-width: 1100px;
-  margin: 80px auto;
+  max-width: 1200px;
+  margin: 100px auto;
   padding: 0 24px;
   text-align: center;
 }
 
 .screenshots h2 {
-  font-size: 36px;
-  margin-bottom: 40px;
+  font-size: 42px;
+  margin-bottom: 50px;
   font-weight: 800;
+  letter-spacing: -1px;
 }
 
-.screenshot-grid {
+.screenshot-showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.showcase-main {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.showcase-gif {
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+}
+
+.showcase-caption {
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.showcase-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
-.screenshot {
+.showcase-item {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   overflow: hidden;
-  transition: transform 0.2s;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.screenshot:hover {
-  transform: translateY(-4px);
+.showcase-item:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
 }
 
-.screenshot img {
+.showcase-item img {
   width: 100%;
   height: auto;
   display: block;
@@ -268,6 +301,7 @@ a:hover {
   color: var(--muted);
   font-size: 14px;
   text-align: left;
+  font-weight: 500;
 }
 
 /* Download */
