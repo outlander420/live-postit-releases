@@ -6,7 +6,7 @@
     <title>Live PostIt — Sticky Notes for Your Desktop</title>
     <meta name="description" content="Live PostIt is a delightful desktop sticky-note wall. Create walls, pin notes, share them live with friends, and keep every device in sync." />
     <link rel="icon" type="image/png" href="assets/icon.png" />
-    <link rel="stylesheet" href="styles.css?v=20260912" />
+    <link rel="stylesheet" href="styles.css?v=20260913" />
   </head>
   <body>
     
@@ -19,6 +19,7 @@
         <nav class="nav-links">
           <a href="#features">Features</a>
           <a href="#screenshots">Screenshots</a>
+          <a href="#guide">Guide</a>
           <a href="#download">Download</a>
         </nav>
       </div>
@@ -127,6 +128,49 @@
         </div>
       </section>
 
+      <section id="guide" class="guide">
+        <div class="guide-header">
+          <h2>Start in 60 seconds</h2>
+          <p>Install it, click around, done. Here's the whole story in a few lines.</p>
+        </div>
+        <div class="guide-steps">
+          <div class="guide-step">
+            <div class="guide-num">1</div>
+            <h3>Install it</h3>
+            <p>Grab your platform's file in the <a href="#download">Download</a> section and run it.</p>
+            <p class="guide-tip">Linux AppImage? <code>chmod +x live-postit-0.1.0.AppImage</code> first.</p>
+          </div>
+          <div class="guide-step">
+            <div class="guide-num">2</div>
+            <h3>Make a note</h3>
+            <p><strong>Double-click</strong> anywhere on the wall (or press <kbd>Ctrl</kbd>+<kbd>N</kbd>) and start typing. It saves itself.</p>
+          </div>
+          <div class="guide-step">
+            <div class="guide-num">3</div>
+            <h3>Play around</h3>
+            <p>Drag to move, resize from the corner, recolor, format with the toolbar, and pin notes to other walls.</p>
+          </div>
+        </div>
+        <div class="guide-card">
+          <h3>Keyboard shortcuts worth knowing</h3>
+          <div class="shortcuts-grid">
+            <div class="shortcut"><span>New note</span><span><kbd>Ctrl</kbd>+<kbd>N</kbd></span></div>
+            <div class="shortcut"><span>Switch wall</span><span><kbd>Ctrl</kbd>+<kbd>1</kbd>&hellip;<kbd>9</kbd></span></div>
+            <div class="shortcut"><span>Bold / Italic / Underline</span><span><kbd>Ctrl</kbd>+<kbd>B</kbd> <kbd>Ctrl</kbd>+<kbd>I</kbd> <kbd>Ctrl</kbd>+<kbd>U</kbd></span></div>
+            <div class="shortcut"><span>Duplicate note</span><span><kbd>Ctrl</kbd>+<kbd>D</kbd></span></div>
+            <div class="shortcut"><span>Undo / Redo</span><span><kbd>Ctrl</kbd>+<kbd>Z</kbd> <kbd>Ctrl</kbd>+<kbd>Y</kbd></span></div>
+            <div class="shortcut"><span>Search everything</span><span><kbd>Ctrl</kbd>+<kbd>F</kbd></span></div>
+            <div class="shortcut"><span>Quick note (anywhere)</span><span><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>N</kbd></span></div>
+            <div class="shortcut"><span>Delete note</span><span><kbd>Delete</kbd></span></div>
+          </div>
+        </div>
+        <p class="guide-note">
+          <strong>Private by default:</strong> everything is saved on your machine &mdash; nothing is
+          uploaded unless you turn on live sharing. Data lives in
+          <code>~/.config/Live PostIt</code> (Linux) or <code>%APPDATA%\Live PostIt</code> (Windows).
+        </p>
+      </section>
+
       <section id="download" class="download">
         <div class="download-header">
           <h2>Download Live PostIt</h2>
@@ -187,4 +231,4 @@
     </footer>
   </body>
 </html>
-<!-- Updated 2026-09-11T20:25:00Z -->
+<!-- Updated 2026-09-11T20:45:00Z -->
