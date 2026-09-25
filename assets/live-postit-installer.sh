@@ -2,8 +2,8 @@
 set -euo pipefail
 
 APPNAME="Live PostIt"
-APPIMAGE="live-postit-0.2.0.AppImage"
-VERSION="0.2.0"
+APPIMAGE="live-postit-0.3.0.AppImage"
+VERSION="0.3.0"
 DOWNLOAD_URL="https://outlander420.github.io/live-postit-releases/assets/$APPIMAGE"
 INSTALL_DIR="$HOME/.local/share/LivePostIt"
 BIN="$HOME/.local/bin"

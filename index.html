@@ -6,7 +6,7 @@
     <title>Live PostIt — Sticky Notes for Your Desktop</title>
     <meta name="description" content="Live PostIt is a delightful desktop sticky-note wall. Create walls, pin notes, share them live with friends, and keep every device in sync." />
     <link rel="icon" type="image/png" href="assets/icon.png" />
-    <link rel="stylesheet" href="styles.css?v=20260921" />
+    <link rel="stylesheet" href="styles.css?v=20260925" />
   </head>
   <body>
     
@@ -27,7 +27,7 @@
 
     <main>
       <section class="hero">
-        <div class="hero-badge">v0.2.0 — Now Available</div>
+        <div class="hero-badge">v0.3.0 — Security Hardening Release</div>
         <h1>Sticky notes,<br />but <span class="gradient-text">alive.</span></h1>
         <p class="tagline">
           Create walls, pin notes, format them with rich text — and share them live with friends.
@@ -138,7 +138,7 @@
             <div class="guide-num">1</div>
             <h3>Install it</h3>
             <p>Grab your platform's file in the <a href="#download">Download</a> section and run it.</p>
-            <p class="guide-tip">Linux AppImage? <code>chmod +x live-postit-0.2.0.AppImage</code> first.</p>
+            <p class="guide-tip">Linux AppImage? <code>chmod +x live-postit-0.3.0.AppImage</code> first.</p>
           </div>
           <div class="guide-step">
             <div class="guide-num">2</div>
@@ -171,6 +171,20 @@
         </p>
       </section>
 
+      <section class="changelog">
+        <div class="changelog-header">
+          <h2>What's new in v0.3.0</h2>
+          <p>A security-hardening release. Your notes and shares are safer by default.</p>
+        </div>
+        <ul class="changelog-list">
+          <li><strong>Sanitized note import &amp; quick notes</strong> — imported JSON and quick-note HTML are now stripped of scripts, event handlers, and dangerous URLs before they render.</li>
+          <li><strong>Stronger HTML sanitizer</strong> — blocks <code>javascript:</code>, <code>vbscript:</code> and <code>data:</code> URLs, and removes <code>svg</code>, <code>iframe</code>, <code>video</code>, <code>audio</code> and other risky tags.</li>
+          <li><strong>Share-link validation</strong> — share codes must point to a real Firebase database; anything else is rejected.</li>
+          <li><strong>Owner-protected shared walls</strong> — only the wall owner can delete a shared wall; guests with the code can still edit notes.</li>
+          <li><strong>Hardened runtime</strong> — cryptographically-random note IDs, explicit <code>webSecurity</code>, and null-byte-safe HTML escaping.</li>
+        </ul>
+      </section>
+
       <section id="download" class="download">
         <div class="download-header">
           <h2>Download Live PostIt</h2>
@@ -181,14 +195,14 @@
             <div class="download-icon">🪟</div>
             <h3>Windows</h3>
             <p class="download-size">79 MB · .exe installer</p>
-            <a href="assets/live-postit-Setup-0.2.0.exe" class="btn primary">Download for Windows</a>
+            <a href="assets/live-postit-Setup-0.3.0.exe" class="btn primary">Download for Windows</a>
           </div>
           <div class="download-card">
             <div class="download-icon">🐧</div>
             <h3>Linux</h3>
             <p class="download-size">90 MB · .tar.gz archive</p>
-            <a href="assets/live-postit-0.2.0.tar.gz" class="btn primary">Download for Linux</a>
-            <a href="assets/live-postit-0.2.0.AppImage" class="btn ghost" style="margin-top: 8px;">Or AppImage (94 MB)</a>
+            <a href="assets/live-postit-0.3.0.tar.gz" class="btn primary">Download for Linux</a>
+            <a href="assets/live-postit-0.3.0.AppImage" class="btn ghost" style="margin-top: 8px;">Or AppImage (94 MB)</a>
             <p style="margin-top: 12px; font-size: 13px;"><a href="assets/live-postit-installer.sh" class="btn ghost">One-click installer (auto desktop entry)</a></p>
           </div>
         </div>
@@ -208,14 +222,14 @@
             <h3>Linux (AppImage)</h3>
             <ol>
               <li>Make it executable:
-                <pre>chmod +x live-postit-0.2.0.AppImage</pre>
+                <pre>chmod +x live-postit-0.3.0.AppImage</pre>
               </li>
               <li>Run it:
-                <pre>./live-postit-0.2.0.AppImage</pre>
+                <pre>./live-postit-0.3.0.AppImage</pre>
               </li>
               <li>If nothing opens, install <code>libfuse2</code> and try again.</li>
               <li>Still blank? Launch with
-                <pre>./live-postit-0.2.0.AppImage --no-sandbox --disable-gpu</pre>
+                <pre>./live-postit-0.3.0.AppImage --no-sandbox --disable-gpu</pre>
               </li>
             </ol>
             <p><strong>Install to your apps menu</strong> (so it shows in your launcher):</p>
@@ -232,10 +246,10 @@
           Made with <span class="heart">&hearts;</span> by
           <a href="https://github.com/outlander420" target="_blank" rel="noopener">Yashvardhan</a>
         </p>
-        <p>Live PostIt &middot; v0.2.0</p>
+        <p>Live PostIt &middot; v0.3.0</p>
         <p class="fine">This site hosts release binaries and update metadata only. Source lives in a private repository.</p>
       </div>
     </footer>
   </body>
 </html>
-<!-- Updated 2026-09-21T15:05:00Z -->
+<!-- Updated 2026-09-25T13:35:00Z -->

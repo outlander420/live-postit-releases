@@ -527,6 +527,70 @@ img {
   white-space: nowrap;
 }
 
+.changelog {
+  max-width: 1000px;
+  margin: 0 auto 80px;
+  padding: 0 24px;
+}
+
+.changelog-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.changelog-header h2 {
+  font-size: 34px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 12px;
+}
+
+.changelog-header p {
+  font-size: 17px;
+  color: var(--muted);
+}
+
+.changelog-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.changelog-list li {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  font-size: 15px;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.changelog-list li strong {
+  color: var(--text);
+  display: block;
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+.changelog-list li code {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 13px;
+  color: var(--text);
+}
+
+@media (max-width: 720px) {
+  .changelog-list {
+    grid-template-columns: 1fr;
+  }
+}
+
 .guide-note {
   text-align: center;
   font-size: 14px;
