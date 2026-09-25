@@ -2,25 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>document.documentElement.classList.add('js');</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Live PostIt — Sticky Notes for Your Desktop</title>
     <meta name="description" content="Live PostIt is a delightful desktop sticky-note wall. Create walls, pin notes, share them live with friends, and keep every device in sync." />
     <link rel="icon" type="image/png" href="assets/icon.png" />
-    <link rel="stylesheet" href="styles.css?v=20260925" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20260926" />
   </head>
   <body>
-    
+
     <header class="nav">
       <div class="nav-inner">
         <span class="brand">
           <img src="assets/icon.png" alt="Live PostIt icon" class="brand-logo" />
           <span>Live PostIt</span>
         </span>
-        <nav class="nav-links">
+        <nav class="nav-links" aria-label="Primary">
           <a href="#features">Features</a>
-          <a href="#screenshots">Screenshots</a>
+          <a href="#how">How it works</a>
           <a href="#guide">Guide</a>
-          <a href="#download">Download</a>
+          <a href="manual.html">Manual</a>
+          <a href="#download" class="nav-cta">Download</a>
         </nav>
       </div>
     </header>
@@ -30,23 +35,26 @@
         <div class="hero-badge">v0.3.0 — Security Hardening Release</div>
         <h1>Sticky notes,<br />but <span class="gradient-text">alive.</span></h1>
         <p class="tagline">
-          Create walls, pin notes, format them with rich text — and share them live with friends.
-          Free. Offline-first. Your data stays on your machine.
+          A calm, offline-first wall for everything on your mind. Jot in seconds, organize by wall,
+          format with rich text, and share a board live with friends — all on your own machine.
         </p>
         <div class="hero-actions">
-          <a href="#download" class="btn primary">Download</a>
+          <a href="#download" class="btn primary">Download free</a>
+          <a href="manual.html" class="btn ghost">Read the manual</a>
         </div>
         <div class="hero-meta">
           <span>Windows</span>
-          <span>•</span>
+          <span>&middot;</span>
           <span>Linux</span>
-          <span>•</span>
+          <span>&middot;</span>
           <span>macOS soon</span>
+          <span>&middot;</span>
+          <span>No account needed</span>
         </div>
       </section>
 
       <section class="app-preview">
-        <div class="app-window">
+        <div class="app-window reveal">
           <div class="app-titlebar">
             <div class="app-dots">
               <span class="dot red"></span>
@@ -60,65 +68,89 @@
       </section>
 
       <section id="features" class="features">
-        <div class="features-header">
+        <div class="features-header reveal">
           <h2>Everything you need,<br />nothing you don't.</h2>
           <p>Simple, powerful, and private. Live PostIt focuses on what matters.</p>
         </div>
         <div class="features-grid">
-          <div class="feature-card">
+          <div class="feature-card reveal">
             <div class="feature-icon">📋</div>
             <h3>Multiple walls</h3>
             <p>Keep separate boards for work, shopping, ideas — switch with <code>Ctrl+1…9</code>. Quick notes get their own permanent wall.</p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card reveal">
             <div class="feature-icon">✏️</div>
             <h3>Rich text notes</h3>
             <p>Bold, italic, underline, checklists and bullet lists. Add a heading right on the drag bar. Drag, resize, recolor.</p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card reveal">
+            <div class="feature-icon">⚡</div>
+            <h3>Quick notes anywhere</h3>
+            <p>Press <code>Ctrl+Alt+Space</code> from any app to capture a thought instantly. It lands on your Quick Notes wall.</p>
+          </div>
+          <div class="feature-card reveal">
             <div class="feature-icon">🔄</div>
             <h3>Share a wall live</h3>
-            <p>Give friends a code to view &amp; edit the same wall together in real time.</p>
+            <p>Give friends a code to view &amp; edit the same wall together in real time. Only you can delete it.</p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card reveal">
             <div class="feature-icon">☁️</div>
             <h3>Sync across devices</h3>
-            <p>Keep your walls in sync on all your machines via your own Firebase project.</p>
+            <p>Keep your walls in sync on all your machines via your own Firebase project. You own the data.</p>
           </div>
-          <div class="feature-card">
+          <div class="feature-card reveal">
             <div class="feature-icon">🔒</div>
             <h3>Offline-first &amp; private</h3>
-            <p>Notes live locally. No account, no analytics, no tracking — only leave your device when you say so.</p>
+            <p>Notes live locally. No account, no analytics, no tracking — they only leave your device when you say so.</p>
           </div>
-          <div class="feature-card">
-            <div class="feature-icon">⚡</div>
-            <h3>Automatic updates</h3>
-            <p>Installed versions keep themselves up to date silently in the background.</p>
+        </div>
+      </section>
+
+      <section id="how" class="how">
+        <div class="how-header reveal">
+          <h2>How it works</h2>
+          <p>Three steps from download to a wall that's actually useful.</p>
+        </div>
+        <div class="how-flow">
+          <div class="how-step reveal">
+            <div class="how-num">1</div>
+            <h3>Capture</h3>
+            <p>Double-click the wall or hit <code>Ctrl+N</code> to drop a note. In a hurry? <code>Ctrl+Alt+Space</code> works from anywhere on your desktop.</p>
+          </div>
+          <div class="how-step reveal">
+            <div class="how-num">2</div>
+            <h3>Organize</h3>
+            <p>Drag notes into place, resize, recolor, add headings, and sort them into walls. Search everything with <code>Ctrl+F</code>.</p>
+          </div>
+          <div class="how-step reveal">
+            <div class="how-num">3</div>
+            <h3>Share &amp; sync</h3>
+            <p>Generate a code to share a wall live, or connect your Firebase project to keep every device in step. Optional, always.</p>
           </div>
         </div>
       </section>
 
       <section id="screenshots" class="screenshots">
-        <div class="screenshots-header">
+        <div class="screenshots-header reveal">
           <h2>See it in action</h2>
           <p>A clean, distraction-free interface that just works.</p>
         </div>
         <div class="screenshots-grid">
-          <div class="screenshot-card">
+          <div class="screenshot-card reveal">
             <img src="assets/screenshots/screenshot-multi.png" alt="Live PostIt wall with notes" />
             <div class="screenshot-info">
               <h3>Multiple walls</h3>
               <p>Keep separate boards for different projects</p>
             </div>
           </div>
-          <div class="screenshot-card">
+          <div class="screenshot-card reveal">
             <img src="assets/screenshots/screenshot-notes.png" alt="Live PostIt rich text notes" />
             <div class="screenshot-info">
               <h3>Rich text formatting</h3>
               <p>Bold, italic, checklists and more</p>
             </div>
           </div>
-          <div class="screenshot-card">
+          <div class="screenshot-card reveal">
             <img src="assets/screenshots/screenshot-share.png" alt="Live PostIt sharing" />
             <div class="screenshot-info">
               <h3>Live sharing</h3>
@@ -129,29 +161,29 @@
       </section>
 
       <section id="guide" class="guide">
-        <div class="guide-header">
+        <div class="guide-header reveal">
           <h2>Start in 60 seconds</h2>
           <p>Install it, click around, done. Here's the whole story in a few lines.</p>
         </div>
         <div class="guide-steps">
-          <div class="guide-step">
+          <div class="guide-step reveal">
             <div class="guide-num">1</div>
             <h3>Install it</h3>
             <p>Grab your platform's file in the <a href="#download">Download</a> section and run it.</p>
             <p class="guide-tip">Linux AppImage? <code>chmod +x live-postit-0.3.0.AppImage</code> first.</p>
           </div>
-          <div class="guide-step">
+          <div class="guide-step reveal">
             <div class="guide-num">2</div>
             <h3>Make a note</h3>
             <p><strong>Double-click</strong> anywhere on the wall (or press <kbd>Ctrl</kbd>+<kbd>N</kbd>) and start typing. It saves itself.</p>
           </div>
-          <div class="guide-step">
+          <div class="guide-step reveal">
             <div class="guide-num">3</div>
             <h3>Play around</h3>
             <p>Drag to move, resize from the corner, recolor, format with the toolbar, add a heading on the drag bar, and pin notes to other walls.</p>
           </div>
         </div>
-        <div class="guide-card">
+        <div class="guide-card reveal">
           <h3>Keyboard shortcuts worth knowing</h3>
           <div class="shortcuts-grid">
             <div class="shortcut"><span>New note</span><span><kbd>Ctrl</kbd>+<kbd>N</kbd></span></div>
@@ -163,6 +195,7 @@
             <div class="shortcut"><span>Quick note (anywhere)</span><span><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Space</kbd></span></div>
             <div class="shortcut"><span>Delete note</span><span><kbd>Delete</kbd></span></div>
           </div>
+          <p class="guide-more">The full list — including sharing, sync, and data locations — is in the <a href="manual.html">manual</a>.</p>
         </div>
         <p class="guide-note">
           <strong>Private by default:</strong> everything is saved on your machine &mdash; nothing is
@@ -171,33 +204,123 @@
         </p>
       </section>
 
+      <section class="faq">
+        <div class="faq-header reveal">
+          <h2>Questions, answered</h2>
+          <p>The things people ask most.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">Is Live PostIt free?<span class="faq-icon">+</span></button>
+            <div class="faq-a"><div class="faq-a-inner">Yes — completely free. No account, no subscription, no ads, no tracking. It's a single download you run on your own machine.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">Where is my data stored?<span class="faq-icon">+</span></button>
+            <div class="faq-a"><div class="faq-a-inner">On your computer, in <code>~/.config/Live PostIt</code> (Linux) or <code>%APPDATA%\Live PostIt</code> (Windows). The app also keeps 30 rolling backups automatically. You can export everything to a JSON file anytime.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">Do I need an internet connection?<span class="faq-icon">+</span></button>
+            <div class="faq-a"><div class="faq-a-inner">No. Live PostIt is offline-first and works fully without a connection. You only need the internet if you enable live sharing or cross-device sync, both of which are optional.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">How does sharing work?<span class="faq-icon">+</span></button>
+            <div class="faq-a"><div class="faq-a-inner">You generate a share code for a wall and send it to a friend. They enter the code to join and edit it live. Sharing runs over your own Firebase project, so you control where the data lives. Only the wall owner can delete it.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">What's the difference between a wall and a note?<span class="faq-icon">+</span></button>
+            <div class="faq-a"><div class="faq-a-inner">A wall is a board that holds many notes — think of it as one project or topic. Notes are the individual sticky notes you write, move, and format. You can have as many walls as you like.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-q" aria-expanded="false">Can I move my notes to another computer?<span class="faq-icon">+</span></button>
+            <div class="faq-a"><div class="faq-a-inner">Yes. Use <strong>Export</strong> to save all your walls to a JSON file, then <strong>Import</strong> it on the other machine. Or enable sync with your Firebase project and your walls follow you everywhere.</div></div>
+          </div>
+        </div>
+      </section>
+
       <section class="changelog">
-        <div class="changelog-header">
+        <div class="changelog-header reveal">
           <h2>What's new in v0.3.0</h2>
           <p>A security-hardening release. Your notes and shares are safer by default.</p>
         </div>
         <ul class="changelog-list">
-          <li><strong>Sanitized note import &amp; quick notes</strong> — imported JSON and quick-note HTML are now stripped of scripts, event handlers, and dangerous URLs before they render.</li>
-          <li><strong>Stronger HTML sanitizer</strong> — blocks <code>javascript:</code>, <code>vbscript:</code> and <code>data:</code> URLs, and removes <code>svg</code>, <code>iframe</code>, <code>video</code>, <code>audio</code> and other risky tags.</li>
-          <li><strong>Share-link validation</strong> — share codes must point to a real Firebase database; anything else is rejected.</li>
-          <li><strong>Owner-protected shared walls</strong> — only the wall owner can delete a shared wall; guests with the code can still edit notes.</li>
-          <li><strong>Hardened runtime</strong> — cryptographically-random note IDs, explicit <code>webSecurity</code>, and null-byte-safe HTML escaping.</li>
+          <li class="reveal"><strong>Sanitized note import &amp; quick notes</strong> — imported JSON and quick-note HTML are now stripped of scripts, event handlers, and dangerous URLs before they render.</li>
+          <li class="reveal"><strong>Stronger HTML sanitizer</strong> — blocks <code>javascript:</code>, <code>vbscript:</code> and <code>data:</code> URLs, and removes <code>svg</code>, <code>iframe</code>, <code>video</code>, <code>audio</code> and other risky tags.</li>
+          <li class="reveal"><strong>Share-link validation</strong> — share codes must point to a real Firebase database; anything else is rejected.</li>
+          <li class="reveal"><strong>Owner-protected shared walls</strong> — only the wall owner can delete a shared wall; guests with the code can still edit notes.</li>
+          <li class="reveal"><strong>Hardened runtime</strong> — cryptographically-random note IDs, explicit <code>webSecurity</code>, and null-byte-safe HTML escaping.</li>
         </ul>
       </section>
 
+      <section id="roadmap" class="roadmap">
+        <div class="roadmap-header reveal">
+          <h2>What's next</h2>
+          <p>Live PostIt is a work in progress. Here's where it's headed.</p>
+        </div>
+        <div class="roadmap-list">
+          <div class="roadmap-item reveal">
+            <div class="rm-icon">🍎</div>
+            <div>
+              <h3>macOS support</h3>
+              <p>A native-feeling build for Mac, joining Windows and Linux.</p>
+              <span class="rm-tag">In progress</span>
+            </div>
+          </div>
+          <div class="roadmap-item reveal">
+            <div class="rm-icon">🖼️</div>
+            <div>
+              <h3>Note attachments</h3>
+              <p>Drop images and files straight onto a note.</p>
+              <span class="rm-tag">Planned</span>
+            </div>
+          </div>
+          <div class="roadmap-item reveal">
+            <div class="rm-icon">🏷️</div>
+            <div>
+              <h3>Labels &amp; tags</h3>
+              <p>Tag notes and filter across walls for smarter organization.</p>
+              <span class="rm-tag">Planned</span>
+            </div>
+          </div>
+          <div class="roadmap-item reveal">
+            <div class="rm-icon">📄</div>
+            <div>
+              <h3>Export to PDF &amp; image</h3>
+              <p>Share a wall as a single PDF or PNG — perfect for handoffs.</p>
+              <span class="rm-tag">Planned</span>
+            </div>
+          </div>
+          <div class="roadmap-item reveal">
+            <div class="rm-icon">🎨</div>
+            <div>
+              <h3>Custom wall themes</h3>
+              <p>Backgrounds and palettes to make each board feel its own.</p>
+              <span class="rm-tag">Ideas</span>
+            </div>
+          </div>
+          <div class="roadmap-item reveal">
+            <div class="rm-icon">🔐</div>
+            <div>
+              <h3>End-to-end encryption</h3>
+              <p>Encrypt shared walls so only you and your collaborators can read them.</p>
+              <span class="rm-tag">Ideas</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="download" class="download">
-        <div class="download-header">
+        <div class="download-header reveal">
           <h2>Download Live PostIt</h2>
           <p>Available for Windows and Linux. macOS version coming soon.</p>
         </div>
         <div class="download-cards">
-          <div class="download-card">
+          <div class="download-card reveal">
             <div class="download-icon">🪟</div>
             <h3>Windows</h3>
             <p class="download-size">79 MB · .exe installer</p>
             <a href="assets/live-postit-Setup-0.3.0.exe" class="btn primary">Download for Windows</a>
           </div>
-          <div class="download-card">
+          <div class="download-card reveal">
             <div class="download-icon">🐧</div>
             <h3>Linux</h3>
             <p class="download-size">90 MB · .tar.gz archive</p>
@@ -209,16 +332,16 @@
       </section>
 
       <section class="install">
-        <h2>Install in seconds</h2>
+        <h2 class="reveal">Install in seconds</h2>
         <div class="install-cols">
-          <div>
+          <div class="reveal">
             <h3>Windows</h3>
             <ol>
               <li>Run the <strong>.exe</strong> installer.</li>
               <li>Follow the setup and open Live PostIt from the Start menu.</li>
             </ol>
           </div>
-          <div>
+          <div class="reveal">
             <h3>Linux (AppImage)</h3>
             <ol>
               <li>Make it executable:
@@ -250,6 +373,8 @@
         <p class="fine">This site hosts release binaries and update metadata only. Source lives in a private repository.</p>
       </div>
     </footer>
+
+    <script src="site.js"></script>
   </body>
 </html>
-<!-- Updated 2026-09-25T13:35:00Z -->
+<!-- Updated 2026-09-26T00:00:00Z -->

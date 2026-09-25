@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>document.documentElement.classList.add('js');</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manual — Live PostIt</title>
+    <meta name="description" content="The complete Live PostIt manual: notes, walls, quick notes, sharing, sync, shortcuts, data locations, and troubleshooting." />
+    <link rel="icon" type="image/png" href="assets/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=20260926" />
+    <link rel="stylesheet" href="manual.css?v=20260926" />
+  </head>
+  <body>
+
+    <header class="nav">
+      <div class="nav-inner">
+        <a href="index.html" class="brand">
+          <img src="assets/icon.png" alt="Live PostIt icon" class="brand-logo" />
+          <span>Live PostIt</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html#features">Features</a>
+          <a href="index.html#how">How it works</a>
+          <a href="manual.html" class="active">Manual</a>
+          <a href="index.html#download" class="nav-cta">Download</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="manual">
+      <aside class="manual-sidebar">
+        <div class="manual-sidebar-inner">
+          <p class="manual-sidebar-title">On this page</p>
+          <nav class="manual-toc" aria-label="Manual contents">
+            <a href="#start">Getting started</a>
+            <a href="#notes">Notes</a>
+            <a href="#walls">Walls</a>
+            <a href="#quick">Quick notes</a>
+            <a href="#search">Search</a>
+            <a href="#sharing">Sharing a wall</a>
+            <a href="#sync">Sync across devices</a>
+            <a href="#export">Export &amp; import</a>
+            <a href="#settings">Settings</a>
+            <a href="#shortcuts">Keyboard shortcuts</a>
+            <a href="#data">Where your data lives</a>
+            <a href="#troubleshooting">Troubleshooting</a>
+          </nav>
+          <a href="index.html#download" class="manual-download">Download Live PostIt</a>
+        </div>
+      </aside>
+
+      <main class="manual-content">
+        <div class="manual-hero">
+          <h1>The Live PostIt Manual</h1>
+          <p>Everything you need to get the most out of your sticky-note wall — from your first note to live sharing and cross-device sync.</p>
+        </div>
+
+        <section id="start" class="manual-section">
+          <h2>Getting started</h2>
+          <h3>Install</h3>
+          <p>Download the build for your platform from the <a href="index.html#download">Download</a> page:</p>
+          <ul>
+            <li><strong>Windows</strong> — run the <code>.exe</code> installer and follow the prompts.</li>
+            <li><strong>Linux</strong> — run the AppImage, or use the one-click installer to add a desktop entry.</li>
+            <li><strong>macOS</strong> — coming soon.</li>
+          </ul>
+          <div class="callout">
+            <strong>Linux AppImage:</strong> run <code>chmod +x live-postit-0.3.0.AppImage</code> first. If the window is blank, launch with <code>--no-sandbox --disable-gpu</code> (the installer does this for you).
+          </div>
+
+          <h3>Make your first note</h3>
+          <p><strong>Double-click</strong> anywhere on the wall — or press <kbd>Ctrl</kbd>+<kbd>N</kbd> — and a new note appears. Start typing; it saves automatically. You're already using Live PostIt.</p>
+        </section>
+
+        <section id="notes" class="manual-section">
+          <h2>Notes</h2>
+          <p>Notes are the individual sticky notes on your wall. Here's everything they can do.</p>
+
+          <h3>Create &amp; edit</h3>
+          <ul>
+            <li><strong>Create:</strong> double-click the wall, press <kbd>Ctrl</kbd>+<kbd>N</kbd>, or use the <strong>+</strong> button.</li>
+            <li><strong>Edit:</strong> click into a note and type. Changes save as you go.</li>
+            <li><strong>Heading:</strong> click the drag bar (the strip at the top of a note) to add a bold heading. Press <kbd>Enter</kbd> to save, <kbd>Escape</kbd> to cancel.</li>
+          </ul>
+
+          <h3>Rich text</h3>
+          <p>Select text inside a note and use the toolbar (or shortcuts) to format it:</p>
+          <ul>
+            <li><strong>Bold</strong> <kbd>Ctrl</kbd>+<kbd>B</kbd>, <strong>Italic</strong> <kbd>Ctrl</kbd>+<kbd>I</kbd>, <strong>Underline</strong> <kbd>Ctrl</kbd>+<kbd>U</kbd></li>
+            <li><strong>Strikethrough</strong>, <strong>Checklist</strong>, and <strong>Bullet list</strong> from the toolbar</li>
+          </ul>
+
+          <h3>Move, resize, recolor</h3>
+          <ul>
+            <li><strong>Move:</strong> drag the note by its grip bar.</li>
+            <li><strong>Resize:</strong> drag the corner handle.</li>
+            <li><strong>Recolor:</strong> pick a color from the palette dots — blue, grey, white, pink, or black.</li>
+          </ul>
+
+          <h3>Duplicate, move to a wall, delete</h3>
+          <ul>
+            <li><strong>Duplicate:</strong> <kbd>Ctrl</kbd>+<kbd>D</kbd> or the duplicate button makes a copy.</li>
+            <li><strong>Copy / move to a wall:</strong> use the wall button on a note. Hold <kbd>Shift</kbd> to move instead of copy.</li>
+            <li><strong>Delete:</strong> press <kbd>Delete</kbd> or the <strong>×</strong> button. Deleted notes go to the <a href="#walls">Trash</a>.</li>
+          </ul>
+          <div class="callout">
+            <strong>Undo / redo:</strong> press <kbd>Ctrl</kbd>+<kbd>Z</kbd> to undo and <kbd>Ctrl</kbd>+<kbd>Y</kbd> to redo most actions.
+          </div>
+        </section>
+
+        <section id="walls" class="manual-section">
+          <h2>Walls</h2>
+          <p>A wall is a board that holds many notes — think of it as one project or topic. Use walls to keep things organized.</p>
+          <ul>
+            <li><strong>Create:</strong> click the <strong>+</strong> tab to add a new wall.</li>
+            <li><strong>Switch:</strong> click a tab, or press <kbd>Ctrl</kbd>+<kbd>1</kbd> through <kbd>Ctrl</kbd>+<kbd>9</kbd>.</li>
+            <li><strong>Rename:</strong> double-click a wall's tab and type a new name.</li>
+            <li><strong>Delete:</strong> click the <strong>×</strong> on a wall tab.</li>
+          </ul>
+
+          <h3>Quick Notes wall</h3>
+          <p>There's a permanent <strong>Quick Notes</strong> wall that you can't delete. Every note you capture with the global shortcut lands here, so quick thoughts always have a home.</p>
+
+          <h3>Trash</h3>
+          <p>Deleted notes aren't gone for good — they move to the <strong>Trash</strong> wall. Open it to restore a note or empty it to delete for good.</p>
+        </section>
+
+        <section id="quick" class="manual-section">
+          <h2>Quick notes</h2>
+          <p>Need to capture something without leaving your current app? Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Space</kbd> from <em>anywhere</em> on your desktop.</p>
+          <ul>
+            <li>A small popup appears at your cursor. Start typing.</li>
+            <li>Pick a color if you like.</li>
+            <li><strong>Save:</strong> <kbd>Ctrl</kbd>+<kbd>Enter</kbd> or the <strong>Save</strong> button.</li>
+            <li><strong>Discard:</strong> <kbd>Escape</kbd> or the <strong>Discard</strong> button.</li>
+          </ul>
+          <p>The note is added to your <a href="#walls">Quick Notes</a> wall.</p>
+        </section>
+
+        <section id="search" class="manual-section">
+          <h2>Search</h2>
+          <p>Press <kbd>Ctrl</kbd>+<kbd>F</kbd> to search across <em>all</em> your walls at once.</p>
+          <ul>
+            <li>Type to see live matches with a running count.</li>
+            <li>Press <kbd>Enter</kbd> / <kbd>Shift</kbd>+<kbd>Enter</kbd> to jump between matches.</li>
+            <li>Press <kbd>Escape</kbd> to close the search.</li>
+          </ul>
+        </section>
+
+        <section id="sharing" class="manual-section">
+          <h2>Sharing a wall</h2>
+          <p>Share a wall so friends can view and edit it live, in real time. Sharing runs over your own Firebase project, so you control where the data lives.</p>
+
+          <h3>Set up (one time)</h3>
+          <ol>
+            <li>Create a free project at <code>console.firebase.google.com</code>.</li>
+            <li>Add a <strong>Realtime Database</strong> and enable <strong>Anonymous</strong> authentication.</li>
+            <li>Copy your database config and paste it into Live PostIt's <a href="#settings">Settings</a>.</li>
+          </ol>
+
+          <h3>Share</h3>
+          <ol>
+            <li>Open the wall's menu and choose <strong>Share</strong>.</li>
+            <li>Live PostIt generates a short <strong>share code</strong>.</li>
+            <li>Send the code to a friend. They enter it to join the wall.</li>
+            <li>Everyone with the code can edit notes in real time. Only <strong>you</strong> (the owner) can delete the wall.</li>
+          </ol>
+          <div class="callout">
+            <strong>Privacy note:</strong> anyone with the share code can edit the wall. Treat the code like a password.
+          </div>
+        </section>
+
+        <section id="sync" class="manual-section">
+          <h2>Sync across devices</h2>
+          <p>Keep your walls in step on every machine. Sync uses the same Firebase project as sharing.</p>
+          <ol>
+            <li>Set up your Firebase project (see <a href="#sharing">Sharing</a>).</li>
+            <li>Paste your database config into <a href="#settings">Settings</a> and enable sync.</li>
+            <li>Your walls now sync across any device signed into the same Firebase project.</li>
+          </ol>
+          <p>Sync is optional and offline-first — if you're offline, your notes stay local and sync when you reconnect.</p>
+        </section>
+
+        <section id="export" class="manual-section">
+          <h2>Export &amp; import</h2>
+          <p>Back up your walls or move them to another computer.</p>
+          <ul>
+            <li><strong>Export:</strong> saves all your walls to a JSON file. Use this for backups or handoffs.</li>
+            <li><strong>Import:</strong> loads walls from a JSON file. You can choose to merge or replace your current walls.</li>
+          </ul>
+          <div class="callout">
+            <strong>Tip:</strong> export regularly if you rely on a single machine. The app also keeps 30 rolling automatic backups in your data folder.
+          </div>
+        </section>
+
+        <section id="settings" class="manual-section">
+          <h2>Settings</h2>
+          <p>Open the settings menu (gear icon) to control how Live PostIt behaves:</p>
+          <ul>
+            <li><strong>Launch at startup</strong> — start Live PostIt when you log in.</li>
+            <li><strong>Start minimized to tray</strong> — begin in the system tray instead of a window.</li>
+            <li><strong>Dark / light mode</strong> — toggle the theme (also via the sun/moon button).</li>
+            <li><strong>Sync &amp; sharing</strong> — paste your Firebase config and enable sync/sharing.</li>
+          </ul>
+          <p>You can also reach <strong>Quick note</strong>, <strong>Show/Hide</strong>, <strong>Open at login</strong>, and <strong>Quit</strong> from the system tray icon.</p>
+        </section>
+
+        <section id="shortcuts" class="manual-section">
+          <h2>Keyboard shortcuts</h2>
+          <table class="kbd-table">
+            <thead>
+              <tr><th>Action</th><th>Shortcut</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>New note</td><td><kbd>Ctrl</kbd>+<kbd>N</kbd></td></tr>
+              <tr><td>Switch wall</td><td><kbd>Ctrl</kbd>+<kbd>1</kbd> … <kbd>9</kbd></td></tr>
+              <tr><td>Bold</td><td><kbd>Ctrl</kbd>+<kbd>B</kbd></td></tr>
+              <tr><td>Italic</td><td><kbd>Ctrl</kbd>+<kbd>I</kbd></td></tr>
+              <tr><td>Underline</td><td><kbd>Ctrl</kbd>+<kbd>U</kbd></td></tr>
+              <tr><td>Duplicate note</td><td><kbd>Ctrl</kbd>+<kbd>D</kbd></td></tr>
+              <tr><td>Undo</td><td><kbd>Ctrl</kbd>+<kbd>Z</kbd></td></tr>
+              <tr><td>Redo</td><td><kbd>Ctrl</kbd>+<kbd>Y</kbd></td></tr>
+              <tr><td>Search everything</td><td><kbd>Ctrl</kbd>+<kbd>F</kbd></td></tr>
+              <tr><td>Quick note (anywhere)</td><td><kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>Space</kbd></td></tr>
+              <tr><td>Save quick note</td><td><kbd>Ctrl</kbd>+<kbd>Enter</kbd></td></tr>
+              <tr><td>Discard / cancel</td><td><kbd>Escape</kbd></td></tr>
+              <tr><td>Save heading</td><td><kbd>Enter</kbd></td></tr>
+              <tr><td>Delete note</td><td><kbd>Delete</kbd></td></tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section id="data" class="manual-section">
+          <h2>Where your data lives</h2>
+          <p>Live PostIt is offline-first. Your notes are stored on your own machine:</p>
+          <ul>
+            <li><strong>Linux:</strong> <code>~/.config/Live PostIt</code></li>
+            <li><strong>Windows:</strong> <code>%APPDATA%\Live PostIt</code></li>
+          </ul>
+          <p>Your walls are saved in a <code>walls.json</code> file, and the app keeps 30 rolling backups alongside it. Nothing is uploaded unless you turn on sharing or sync.</p>
+        </section>
+
+        <section id="troubleshooting" class="manual-section">
+          <h2>Troubleshooting</h2>
+          <h3>The window is blank (Linux)</h3>
+          <p>Some systems need extra flags. Launch with:</p>
+          <pre>./live-postit-0.3.0.AppImage --no-sandbox --disable-gpu</pre>
+          <p>The one-click installer bakes these in automatically.</p>
+
+          <h3>AppImage won't run (Linux)</h3>
+          <p>Make sure it's executable and that <code>libfuse2</code> is installed:</p>
+          <pre>chmod +x live-postit-0.3.0.AppImage
+sudo apt install libfuse2</pre>
+
+          <h3>Sharing isn't updating</h3>
+          <p>Check that your Firebase project has <strong>Anonymous</strong> auth enabled and that the database rules allow reads/writes for authenticated users. Publishing rules can take up to 24 hours to fully take effect.</p>
+
+          <h3>I lost my notes</h3>
+          <p>Check the <a href="#walls">Trash</a> wall first. If you've exported before, re-import your latest JSON backup. Otherwise, look in your data folder for the 30 rolling backups.</p>
+        </section>
+
+        <div class="manual-footer">
+          <p>That's the whole manual. For the latest release notes and downloads, head back to the <a href="index.html">home page</a>.</p>
+          <a href="index.html#download" class="btn primary">Download Live PostIt</a>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      <div class="footer-inner">
+        <p class="credit">
+          Made with <span class="heart">&hearts;</span> by
+          <a href="https://github.com/outlander420" target="_blank" rel="noopener">Yashvardhan</a>
+        </p>
+        <p>Live PostIt &middot; v0.3.0</p>
+      </div>
+    </footer>
+
+    <script src="site.js"></script>
+  </body>
+</html>
+<!-- Updated 2026-09-26T00:00:00Z -->
