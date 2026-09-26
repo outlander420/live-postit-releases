@@ -46,6 +46,7 @@
             <a href="#settings">Settings</a>
             <a href="#shortcuts">Keyboard shortcuts</a>
             <a href="#data">Where your data lives</a>
+            <a href="#upgrade">Upgrading &amp; uninstalling</a>
             <a href="#troubleshooting">Troubleshooting</a>
           </nav>
           <a href="index.html#download" class="manual-download">Download Live PostIt</a>
@@ -241,6 +242,33 @@
             <li><strong>Windows:</strong> <code>%APPDATA%\Live PostIt</code></li>
           </ul>
           <p>Your walls are saved in a <code>walls.json</code> file, and the app keeps 30 rolling backups alongside it. Nothing is uploaded unless you turn on sharing or sync.</p>
+        </section>
+
+        <section id="upgrade" class="manual-section">
+          <h2>Upgrading &amp; uninstalling</h2>
+
+          <h3>Upgrading to a new version</h3>
+          <p>Just re-run the installer. It downloads the latest AppImage and updates your menu entry and shortcut. Your notes are kept.</p>
+          <pre>curl -fsSL https://outlander420.github.io/live-postit-releases/assets/live-postit-installer.sh | bash</pre>
+          <p>For a clean upgrade, remove the old version first (below), then run the installer again.</p>
+
+          <h3>Uninstalling</h3>
+          <p>The script install only touches these files. Your notes live separately in <code>~/.config/Live PostIt</code> and are left untouched:</p>
+          <ul>
+            <li><code>~/.local/share/LivePostIt/</code> — the AppImage</li>
+            <li><code>~/.local/bin/live-postit</code> — the launcher</li>
+            <li><code>~/.local/share/applications/live-postit.desktop</code> — the menu entry</li>
+            <li><code>~/.local/share/icons/hicolor/256x256/apps/live-postit.png</code> — the icon</li>
+          </ul>
+          <p>To remove it completely:</p>
+          <pre>rm -rf ~/.local/share/LivePostIt
+rm -f  ~/.local/bin/live-postit
+rm -f  ~/.local/share/applications/live-postit.desktop
+rm -f  ~/.local/share/icons/hicolor/256x256/apps/live-postit.png
+update-desktop-database ~/.local/share/applications 2>/dev/null || true</pre>
+          <div class="callout">
+            <strong>Keep your notes:</strong> the commands above never touch your notes. To also delete your notes, remove <code>~/.config/Live PostIt</code>.
+          </div>
         </section>
 
         <section id="troubleshooting" class="manual-section">
