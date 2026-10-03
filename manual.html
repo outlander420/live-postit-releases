@@ -69,7 +69,7 @@
             <li><strong>macOS:</strong> coming soon.</li>
           </ul>
           <div class="callout">
-            <strong>Linux AppImage:</strong> run <code>chmod +x live-postit-0.3.0.AppImage</code> first. If the window is blank, launch with <code>--no-sandbox --disable-gpu</code> (the installer does this for you).
+            <strong>Linux AppImage:</strong> run <code>chmod +x live-postit-0.4.0.AppImage</code> first. If the window is blank, launch with <code>--no-sandbox --disable-gpu</code> (the installer does this for you).
           </div>
 
           <h3>Make your first note</h3>
@@ -109,6 +109,22 @@
           </ul>
           <div class="callout">
             <strong>Undo / redo:</strong> press <kbd>Ctrl</kbd>+<kbd>Z</kbd> to undo and <kbd>Ctrl</kbd>+<kbd>Y</kbd> to redo most actions.
+          </div>
+
+          <h3>Attachments (images and files)</h3>
+          <p>Attach files to a note two ways:</p>
+          <ul>
+            <li><strong>Drag and drop</strong> files from your file manager straight onto the note.</li>
+            <li><strong>Paperclip button</strong> in the note toolbar opens a file picker (you can select several files at once).</li>
+          </ul>
+          <p>How they show up:</p>
+          <ul>
+            <li><strong>Images</strong> (PNG, JPG, GIF, WebP, and more) appear as inline thumbnails. Click one to view it full-size in a lightbox.</li>
+            <li><strong>Other files</strong> appear as small chips showing the file type and name. Click a chip to save the file back to disk.</li>
+            <li><strong>Remove</strong> an attachment by hovering it and clicking the small <strong>×</strong>.</li>
+          </ul>
+          <div class="callout">
+            <strong>Limits and storage:</strong> each file is capped at 10 MB and a note can hold up to 20 attachments. Attachments are stored with the note, so they survive JSON export/import and live sync.
           </div>
         </section>
 
@@ -195,6 +211,14 @@
           <div class="callout">
             <strong>Tip:</strong> export regularly if you rely on a single machine. The app also keeps 30 rolling automatic backups in your data folder.
           </div>
+
+          <h3>Export a wall as an image or PDF</h3>
+          <p>Want to share a wall without sharing the app? Use the <strong>Export</strong> button in the top bar:</p>
+          <ul>
+            <li><strong>Export as PNG:</strong> saves the current wall as a single PNG image.</li>
+            <li><strong>Export as PDF:</strong> saves the current wall as a single-page PDF.</li>
+          </ul>
+          <p>The export captures the whole wall at its natural size, including note headings, colors, text, and any attachments. Choose where to save the file when prompted.</p>
         </section>
 
         <section id="settings" class="manual-section">
@@ -275,12 +299,12 @@ update-desktop-database ~/.local/share/applications 2>/dev/null || true</pre>
           <h2>Troubleshooting</h2>
           <h3>The window is blank (Linux)</h3>
           <p>Some systems need extra flags. Launch with:</p>
-          <pre>./live-postit-0.3.0.AppImage --no-sandbox --disable-gpu</pre>
+          <pre>./live-postit-0.4.0.AppImage --no-sandbox --disable-gpu</pre>
           <p>The one-click installer bakes these in automatically.</p>
 
           <h3>AppImage won't run (Linux)</h3>
           <p>Make sure it's executable and that <code>libfuse2</code> is installed:</p>
-          <pre>chmod +x live-postit-0.3.0.AppImage
+          <pre>chmod +x live-postit-0.4.0.AppImage
 sudo apt install libfuse2</pre>
 
           <h3>Sharing isn't updating</h3>
@@ -303,7 +327,7 @@ sudo apt install libfuse2</pre>
           Made with <span class="heart">&hearts;</span> by
           <a href="https://github.com/outlander420" target="_blank" rel="noopener">Yashvardhan</a>
         </p>
-        <p>Live PostIt &middot; v0.3.0</p>
+        <p>Live PostIt &middot; v0.4.0</p>
       </div>
     </footer>
 
