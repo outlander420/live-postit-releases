@@ -1,8 +1,8 @@
-version: 0.5.0
+version: 0.5.1
 files:
-  - url: live-postit-Setup-0.5.0.exe
-    sha512: z9GeJnC4AD82CztoLFIpIOMLtafNAQIouVH21J/PSVpEfatPUGEl9Syc3XlYejbu+2MSQgULkUaYqJrJKNd2AQ==
-    size: 82743149
-path: live-postit-Setup-0.5.0.exe
-sha512: z9GeJnC4AD82CztoLFIpIOMLtafNAQIouVH21J/PSVpEfatPUGEl9Syc3XlYejbu+2MSQgULkUaYqJrJKNd2AQ==
-releaseDate: '2026-10-06T09:15:54.453Z'
+  - url: live-postit-Setup-0.5.1.exe
+    sha512: hgkRG3Bq7SPqsTkqakU9+SRftKq4EQubLfYjDrO8r/tDjKFCdWpN0IX8qqqLPgeO4QH2C+6H2RZ6F765t5gjzQ==
+    size: 82742824
+path: live-postit-Setup-0.5.1.exe
+sha512: hgkRG3Bq7SPqsTkqakU9+SRftKq4EQubLfYjDrO8r/tDjKFCdWpN0IX8qqqLPgeO4QH2C+6H2RZ6F765t5gjzQ==
+releaseDate: '2026-10-06T10:04:27.261Z'
