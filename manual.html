@@ -69,7 +69,7 @@
             <li><strong>macOS:</strong> coming soon.</li>
           </ul>
           <div class="callout">
-            <strong>Linux AppImage:</strong> run <code>chmod +x live-postit-0.4.0.AppImage</code> first. If the window is blank, launch with <code>--no-sandbox --disable-gpu</code> (the installer does this for you).
+            <strong>Linux AppImage:</strong> run <code>chmod +x live-postit-0.5.0.AppImage</code> first. If the window is blank, launch with <code>--no-sandbox --disable-gpu</code> (the installer does this for you).
           </div>
 
           <h3>Make your first note</h3>
@@ -143,6 +143,9 @@
 
           <h3>Trash</h3>
           <p>Deleted notes aren't gone for good. They move to the <strong>Trash</strong> wall. Open it to restore a note or empty it to delete for good.</p>
+
+          <h3>Reorder walls</h3>
+          <p>Drag a wall's tab left or right to rearrange your boards. A line shows where it will land. The order is saved automatically, and you can undo it with <kbd>Ctrl</kbd>+<kbd>Z</kbd>. The <strong>Quick Notes</strong> tab and the <strong>+</strong> button stay pinned at the end.</p>
         </section>
 
         <section id="quick" class="manual-section">
@@ -231,6 +234,12 @@
             <li><strong>Sync &amp; sharing:</strong> paste your Firebase config and enable sync/sharing.</li>
           </ul>
           <p>You can also reach <strong>Quick note</strong>, <strong>Show/Hide</strong>, <strong>Open at login</strong>, and <strong>Quit</strong> from the system tray icon.</p>
+
+          <h3>Automatic updates</h3>
+          <p>Live PostIt checks for a new version when it starts. To check manually, click <strong>Check for updates</strong> in Settings. When a new version is available it downloads in the background and shows an <strong>Install and restart</strong> button; click it to update.</p>
+          <div class="callout">
+            <strong>Updates require an internet connection.</strong> On Windows the installer is unsigned, so you may see a one-time security prompt.
+          </div>
         </section>
 
         <section id="shortcuts" class="manual-section">
@@ -299,12 +308,12 @@ update-desktop-database ~/.local/share/applications 2>/dev/null || true</pre>
           <h2>Troubleshooting</h2>
           <h3>The window is blank (Linux)</h3>
           <p>Some systems need extra flags. Launch with:</p>
-          <pre>./live-postit-0.4.0.AppImage --no-sandbox --disable-gpu</pre>
+          <pre>./live-postit-0.5.0.AppImage --no-sandbox --disable-gpu</pre>
           <p>The one-click installer bakes these in automatically.</p>
 
           <h3>AppImage won't run (Linux)</h3>
           <p>Make sure it's executable and that <code>libfuse2</code> is installed:</p>
-          <pre>chmod +x live-postit-0.4.0.AppImage
+          <pre>chmod +x live-postit-0.5.0.AppImage
 sudo apt install libfuse2</pre>
 
           <h3>Sharing isn't updating</h3>
@@ -327,7 +336,7 @@ sudo apt install libfuse2</pre>
           Made with <span class="heart">&hearts;</span> by
           <a href="https://github.com/outlander420" target="_blank" rel="noopener">Yashvardhan</a>
         </p>
-        <p>Live PostIt &middot; v0.4.0</p>
+        <p>Live PostIt &middot; v0.5.0</p>
       </div>
     </footer>
 

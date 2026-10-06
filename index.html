@@ -55,7 +55,7 @@
 
         <div class="hero-wall" aria-hidden="true">
           <div class="note sun">
-            <div class="note-text">Ship v0.4.0</div>
+            <div class="note-text">Ship v0.5.0</div>
             <span class="note-tag">today</span>
           </div>
           <div class="note sky">
@@ -154,6 +154,20 @@
             <h3>Export a wall</h3>
             <p>Turn any wall into a single PNG or PDF for handoffs, docs, or sharing without the app.</p>
           </div>
+          <div class="note sky feature-note reveal">
+            <div class="fn-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M16 3h3a2 2 0 0 1 2 2v3"/><path d="M8 21H5a2 2 0 0 1-2-2v-3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/><path d="M9 12h6M12 9l3 3-3 3"/></svg>
+            </div>
+            <h3>Reorder your walls</h3>
+            <p>Drag the wall tabs to put your boards in any order. The arrangement is saved automatically.</p>
+          </div>
+          <div class="note rose feature-note reveal">
+            <div class="fn-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg>
+            </div>
+            <h3>Automatic updates</h3>
+            <p>Live PostIt checks for new versions and installs them from Settings, so you're always current.</p>
+          </div>
         </div>
       </section>
 
@@ -232,7 +246,7 @@
             <div class="guide-num">1</div>
             <h3>Install it</h3>
             <p>Grab your platform's file in the <a href="#download">Download</a> section and run it.</p>
-            <p class="guide-tip">Linux AppImage? Run <code>chmod +x live-postit-0.4.0.AppImage</code> first.</p>
+            <p class="guide-tip">Linux AppImage? Run <code>chmod +x live-postit-0.5.0.AppImage</code> first.</p>
           </div>
           <div class="guide-step reveal">
             <div class="guide-num">2</div>
@@ -305,14 +319,14 @@
       <section class="section">
         <div class="section-head reveal">
           <span class="eyebrow">Latest</span>
-          <h2>What's new in v0.4.0</h2>
-          <p>Notes can now hold files, and any wall can be shared as a single image or PDF.</p>
+          <h2>What's new in v0.5.0</h2>
+          <p>Reorder your walls with a drag, and the app now updates itself.</p>
         </div>
         <ul class="changelog-list">
-          <li class="reveal"><strong>Note attachments</strong>Drag images or files onto a note, or use the paperclip button. Images show as inline thumbnails (click to view full size); other files become chips you can save to disk.</li>
-          <li class="reveal"><strong>Attachments travel with your notes</strong>Stored alongside the note, so they survive JSON export/import and live sync. Capped at 10 MB per file and 20 per note, and validated on load.</li>
-          <li class="reveal"><strong>Export a wall to PNG or PDF</strong>New Export button in the top bar renders the whole wall to a single shareable file, notes, headings, colors, and attachments included.</li>
-          <li class="reveal"><strong>Undoable attachments</strong>Adding and removing attachments plays nicely with the existing undo/redo history.</li>
+          <li class="reveal"><strong>Wall reordering</strong>Drag the wall tabs to arrange your boards however you like. The order is saved, Quick Notes and the "+" stay pinned, and it's undoable.</li>
+          <li class="reveal"><strong>Automatic updates</strong>Live PostIt now checks for new versions on startup and lets you install them from Settings. No more hunting for a new download.</li>
+          <li class="reveal"><strong>Check for updates</strong>A "Check for updates" button in Settings shows download progress and offers an "Install and restart" when a new version is ready.</li>
+          <li class="reveal"><strong>Everything from v0.4.0</strong>Note attachments (drag images/files onto a note) and wall export to PNG/PDF are included.</li>
         </ul>
       </section>
 
@@ -381,7 +395,7 @@
             </div>
             <h3>Windows</h3>
             <p class="dl-size">79 MB &middot; .exe installer</p>
-            <a href="assets/live-postit-Setup-0.4.0.exe" class="btn primary">Download for Windows</a>
+            <a href="assets/live-postit-Setup-0.5.0.exe" class="btn primary">Download for Windows</a>
           </div>
           <div class="download-card reveal">
             <div class="dl-icon" style="background: var(--note-mint);">
@@ -389,8 +403,8 @@
             </div>
             <h3>Linux</h3>
             <p class="dl-size">90 MB &middot; .tar.gz archive</p>
-            <a href="assets/live-postit-0.4.0.tar.gz" class="btn primary">Download for Linux</a>
-            <p class="dl-alt"><a href="assets/live-postit-0.4.0.AppImage">Or AppImage (94 MB)</a></p>
+            <a href="assets/live-postit-0.5.0.tar.gz" class="btn primary">Download for Linux</a>
+            <p class="dl-alt"><a href="assets/live-postit-0.5.0.AppImage">Or AppImage (94 MB)</a></p>
             <p class="dl-alt"><a href="assets/live-postit-installer.sh">One-click installer (auto desktop entry)</a></p>
           </div>
         </div>
@@ -413,14 +427,14 @@
             <h3>Linux (AppImage)</h3>
             <ol>
               <li>Make it executable:
-                <pre>chmod +x live-postit-0.4.0.AppImage</pre>
+                <pre>chmod +x live-postit-0.5.0.AppImage</pre>
               </li>
               <li>Run it:
-                <pre>./live-postit-0.4.0.AppImage</pre>
+                <pre>./live-postit-0.5.0.AppImage</pre>
               </li>
               <li>If nothing opens, install <code>libfuse2</code> and try again.</li>
               <li>Still blank? Launch with
-                <pre>./live-postit-0.4.0.AppImage --no-sandbox --disable-gpu</pre>
+                <pre>./live-postit-0.5.0.AppImage --no-sandbox --disable-gpu</pre>
               </li>
             </ol>
             <p style="margin-top:14px;"><strong>Install to your apps menu</strong> (so it shows in your launcher):</p>
@@ -438,7 +452,7 @@
           Made with <span class="heart">&hearts;</span> by
           <a href="https://github.com/outlander420" target="_blank" rel="noopener">Yashvardhan</a>
         </p>
-        <p>Live PostIt &middot; v0.4.0</p>
+        <p>Live PostIt &middot; v0.5.0</p>
         <p class="fine">This site hosts release binaries and update metadata only. Source lives in a private repository.</p>
       </div>
     </footer>
