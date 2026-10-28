@@ -96,4 +96,34 @@
       tocObserver.observe(section);
     });
   }
+
+  // --- Live "people using it" count (Firebase Realtime DB, public read) ---
+  (function () {
+    var CHECKIN_URL =
+      'https://live-postit-test-default-rtdb.firebaseio.com/deviceCheckins.json';
+    var REFRESH_MS = 30000;
+    var countEl = document.getElementById('download-count');
+    if (!countEl) return;
+
+    function refresh() {
+      fetch(CHECKIN_URL, { cache: 'no-store' })
+        .then(function (res) {
+          if (!res.ok) throw new Error('Request failed: ' + res.status);
+          return res.json();
+        })
+        .then(function (data) {
+          var count = 0;
+          if (data && typeof data === 'object' && !Array.isArray(data)) {
+            count = Object.keys(data).length;
+          }
+          countEl.textContent = count.toLocaleString('en-US');
+        })
+        .catch(function () {
+          // Keep the last known value on fetch/parse errors.
+        });
+    }
+
+    refresh();
+    setInterval(refresh, REFRESH_MS);
+  })();
 })();
