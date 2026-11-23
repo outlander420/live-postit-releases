@@ -1,8 +1,8 @@
-version: 0.6.2
+version: 0.6.3
 files:
-  - url: live-postit-0.6.2.AppImage
-    sha512: AJ9U8JQz/brlK3PP1PFSx04YNqd92preTcWY2VcHfxrV9qJ3w1caQBZL6JAcresz39tPcZl0sr6ddSMLhFyKXA==
-    size: 98136095
-path: live-postit-0.6.2.AppImage
-sha512: AJ9U8JQz/brlK3PP1PFSx04YNqd92preTcWY2VcHfxrV9qJ3w1caQBZL6JAcresz39tPcZl0sr6ddSMLhFyKXA==
-releaseDate: '2026-11-23T12:14:17.000Z'
+  - url: live-postit-0.6.3.AppImage
+    sha512: OClUJzNvn1E4XKIRL2fea7c4j9Zvh0XI/LDtHevbArpRedvOtz4Yxufpdvzv+pNjLRckKS2fwjStlYaAP5/ryg==
+    size: 98136091
+path: live-postit-0.6.3.AppImage
+sha512: OClUJzNvn1E4XKIRL2fea7c4j9Zvh0XI/LDtHevbArpRedvOtz4Yxufpdvzv+pNjLRckKS2fwjStlYaAP5/ryg==
+releaseDate: '2026-11-23T12:37:58.000Z'
